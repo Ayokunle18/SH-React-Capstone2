@@ -23,7 +23,7 @@ const Sidebar = () => {
          <Link style ={{textDecoration: 'none'}} to= '/clients'>   <li> <BsPerson className='icons'/> Clients</li> </Link>
          <Link style ={{textDecoration: 'none'}} to= '/products'>   <li> <BsStar className='icons'/> Products</li> </Link>
            <li> <BsBook className='icons'/> Profile</li> 
-           <Link style ={{textDecoration: 'none'}} to= '/'> <li> <BsPower className='icons'/> Log Out</li> </Link>
+           <Link style ={{textDecoration: 'none'}} to= '/'> <li className = 'logOut'> <BsPower className='icons'/> Log Out</li> </Link>
         </ul>
     </div>
   )
