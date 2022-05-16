@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+ul{
+    background-color: rgb(13, 37, 85);
+    width: 220px;
+    height: 100vh;
+    float: left;
+    
+}
+ul li{
+    list-style: none;
+    margin-block: 25%;
+    margin-inline: 3%;
+    font-size: 17px;
+    color: rgb(182, 188, 194);
+    font-weight: 500;
+}
+
+ul li:nth-child(7){
+   margin-top: 50%;
+
+}
+h1{
+    font-size: 24px;
+    color: whitesmoke;
+}
+.icons{
+    font-size: 20px;
+    margin-right: 12px;
+    color: rgb(182, 188, 194);
+}
