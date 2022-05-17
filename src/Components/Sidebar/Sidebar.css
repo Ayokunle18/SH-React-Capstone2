@@ -4,7 +4,7 @@
 ul{
     background-color: rgb(13, 37, 85);
     width: 220px;
-    height: 100vh;
+    /* height: 100vh; */
     float: left;
     
 }
