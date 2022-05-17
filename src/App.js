@@ -12,6 +12,7 @@ import Products from './Pages/Products/Products';
 import Team from './Pages/Team/Team';
 import Clients from './Pages/Clients/Clients';
 import Login from './Pages/Log in/Login';
+import ProtectedRoutes from './Components/ProtectedRoutes';
 
 
 function App() {
@@ -21,11 +22,12 @@ function App() {
      <BrowserRouter>
     
     <Routes>
-
-   <Route path='/dashboard' element={<Home/>} />
-   <Route path='/team-members' element={<Team/>} />
-   <Route path='/clients' element={<Clients/>} />
-   <Route path='/products' element={<Products/>} />
+      <Route element ={<ProtectedRoutes/>} >
+        <Route path='/dashboard' element={<Home/>} />
+        <Route path='/team-members' element={<Team/>} />
+        <Route path='/clients' element={<Clients/>} />
+          <Route path='/products' element={<Products/>} />
+   </Route>
    <Route path='/' element={<Login/>} />
    
 

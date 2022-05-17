@@ -29,8 +29,10 @@ const Login = () => {
  sessionStorage.setItem('userDetails' , JSON.stringify({...form}));
  console.log(data)
  window.location = "/dashboard" ;
+ 
 
   }
+
    
   return (
         <div className='bdy'>
