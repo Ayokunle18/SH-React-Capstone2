@@ -3,6 +3,7 @@ import Sidebar from '../../Components/Sidebar/Sidebar'
 import './Team.css'
 
 
+
 const Team = () => {
 
   const[memberInfo , setTeam]  = useState([])
@@ -71,6 +72,11 @@ useEffect(() => {
       </div>
       </div>
   )
+
+
+
 }
 
-export default Team
+export default App;
+
+
