@@ -20,6 +20,7 @@ function App() {
     <div >
      
      <BrowserRouter>
+     
     
     <Routes>
       <Route element ={<ProtectedRoutes/>} >

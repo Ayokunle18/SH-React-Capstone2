@@ -13,21 +13,49 @@ import { Link, Route, Routes } from 'react-router-dom'
 import Team from '../../Pages/Team/Team';
 
 const Sidebar = () => {
-  
+
   function logOut(){
     sessionStorage.removeItem('userDetails');
   }
 
-  return (
-    <div>
+  const openNav = () => {
+    document.getElementById("sidebar").style.width = "220px";
+  }
 
-        <ul>
+const closeNav = () => {
+    document.getElementById("sidebar").style.width = "100px";
+    
+}
+
+
+    if(window.innerWidth<=992){
+        closeNav()
+    }
+    
+    
+
+
+  return (
+    <div className="sideBar" >
+         
+         
+        <ul id='sidebarClose'>
+            <li><h1>BlueBerry CRM</h1></li>
+         <Link style ={{textDecoration: 'none'}}  to = '/dashboard'>   <li> <BsHouse className='icons'/> </li> </Link>
+         <Link style ={{textDecoration: 'none'}} to= '/team-members'>  <li> <BsPeople className='icons'/> </li> </Link>
+         <Link style ={{textDecoration: 'none'}} to= '/clients'>   <li> <BsPerson className='icons'/> </li> </Link>
+         <Link style ={{textDecoration: 'none'}} to= '/products'>   <li> <BsStar className='icons'/> </li> </Link>
+           {/* <li> <BsBook className='icons'/> Profile</li>  */}
+           <Link style ={{textDecoration: 'none'}} onClick={logOut} to= '/'> <li className = 'logOut'> <BsPower className='icons'/> </li> </Link>
+        </ul>
+
+        <ul id='sidebar'>
             <li><h1>BlueBerry CRM</h1></li>
          <Link style ={{textDecoration: 'none'}}  to = '/dashboard'>   <li> <BsHouse className='icons'/> Home</li> </Link>
          <Link style ={{textDecoration: 'none'}} to= '/team-members'>  <li> <BsPeople className='icons'/> Team Members</li> </Link>
          <Link style ={{textDecoration: 'none'}} to= '/clients'>   <li> <BsPerson className='icons'/> Clients</li> </Link>
          <Link style ={{textDecoration: 'none'}} to= '/products'>   <li> <BsStar className='icons'/> Products</li> </Link>
-           <li> <BsBook className='icons'/> Profile</li> 
+           {/* <li> <BsBook className='icons'/> Profile</li>  */}
            <Link style ={{textDecoration: 'none'}} onClick={logOut} to= '/'> <li className = 'logOut'> <BsPower className='icons'/> Log Out</li> </Link>
         </ul>
     </div>

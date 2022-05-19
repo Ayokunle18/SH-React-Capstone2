@@ -3,14 +3,29 @@ import { Route, Routes } from 'react-router-dom'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import Team from '../Team/Team'
 import './Login.css'
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 import Home from '../Home/Home'
 
 const Login = () => {
+
+  const [formValid, setFormValid] = useState(false)
+
   const[form, setForm] = useState({
     email: "" ,
     password: ""
   });
+
+  useEffect(()=>{
+    if (
+        form.email !== "" &&
+        form.password !== ""
+     
+    ){
+        setFormValid(true)
+    } else {
+        setFormValid(false)
+    }
+}, [form])
 
   const [data, setData] = useState({});
 
@@ -20,19 +35,31 @@ const Login = () => {
       [e.target.name]: e.target.value
     })
   }
+
+  const error = document.getElementById("errorMessage");
  
   const submitForm = (e)=>{
   e.preventDefault();
- setData({
-   ...form
- })
- sessionStorage.setItem('userDetails' , JSON.stringify({...form}));
- console.log(data)
- window.location = "/dashboard" ;
- 
+   if(formValid=== true){
+    setData({
+      ...form
+    })
+    sessionStorage.setItem('userDetails' , JSON.stringify({...form}));
+    console.log(data)
+    error.textContent= "";
+    window.location = "/dashboard" ;
+    
+    
+   }
+   else{
+     error.style.color = "red";
+     error.textContent= "Enter your details";
+   }
+
+
 
   }
-
+ 
    
   return (
         <div className='bdy'>
