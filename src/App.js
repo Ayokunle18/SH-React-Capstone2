@@ -23,16 +23,17 @@ function App() {
      
     
     <Routes>
-      <Route element ={<ProtectedRoutes/>} >
-        <Route path='/dashboard' element={<Home/>} />
-        <Route path='/team-members' element={<Team/>} />
-        <Route path='/clients' element={<Clients/>} />
-          <Route path='/products' element={<Products/>} />
-   </Route>
-   <Route path='/' element={<Login/>} />
-   
+          <Route element ={<ProtectedRoutes/>} >
+             <Route path='/dashboard' element={<Home/>} />
+             <Route path='/team-members' element={<Team/>} />
+             <Route path='/clients' element={<Clients/>} />
+             <Route path='/products' element={<Products/>} />
+         </Route>
 
+         <Route path='/' element={<Login/>} />
+   
     </Routes>
+    
     </BrowserRouter>
 
     </div>

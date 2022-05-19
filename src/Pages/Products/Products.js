@@ -13,7 +13,7 @@ const Products = () => {
        .then(response => response.json())
        .then(data => setProduct(data.data))
   }, [])
-  console.log(productInfo);
+ 
   
   
 
