@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import '../Team/Team.css'
-import Heart from '../Team/heart.png'
+
 
 
 const Clients = () => {

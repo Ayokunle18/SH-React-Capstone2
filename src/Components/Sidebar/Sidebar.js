@@ -5,12 +5,12 @@ import { BsStar } from "react-icons/bs";
 import { BsPerson } from "react-icons/bs";
 import { BsPower } from "react-icons/bs";
 import { BsPeople } from "react-icons/bs";
-import { BsBook } from "react-icons/bs";
 
 
 
-import { Link, Route, Routes } from 'react-router-dom'
-import Team from '../../Pages/Team/Team';
+
+import { Link } from 'react-router-dom'
+
 
 const Sidebar = () => {
 
@@ -18,19 +18,19 @@ const Sidebar = () => {
     sessionStorage.removeItem('userDetails');
   }
 
-  const openNav = () => {
-    document.getElementById("sidebar").style.width = "220px";
-  }
+//   const openNav = () => {
+//     document.getElementById("sidebar").style.width = "220px";
+//   }
 
-const closeNav = () => {
-    document.getElementById("sidebar").style.width = "100px";
+// const closeNav = () => {
+//     document.getElementById("sidebar").style.width = "100px";
     
-}
+// }
 
 
-    if(window.innerWidth<=992){
-        closeNav()
-    }
+//     if(window.innerWidth<=992){
+//         closeNav()
+//     }
     
     
 
@@ -40,8 +40,8 @@ const closeNav = () => {
          
          
         <ul id='sidebarClose'>
-            <li><h1>BlueBerry CRM</h1></li>
-         <Link style ={{textDecoration: 'none'}}  to = '/dashboard'>   <li> <BsHouse className='icons'/> </li> </Link>
+          
+         <Link style ={{textDecoration: 'none'}}  to = '/dashboard'>   <li> <BsHouse className='icons' id='topp'/> </li> </Link>
          <Link style ={{textDecoration: 'none'}} to= '/team-members'>  <li> <BsPeople className='icons'/> </li> </Link>
          <Link style ={{textDecoration: 'none'}} to= '/clients'>   <li> <BsPerson className='icons'/> </li> </Link>
          <Link style ={{textDecoration: 'none'}} to= '/products'>   <li> <BsStar className='icons'/> </li> </Link>

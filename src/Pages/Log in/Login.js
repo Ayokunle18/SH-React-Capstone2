@@ -1,10 +1,7 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Sidebar from '../../Components/Sidebar/Sidebar'
-import Team from '../Team/Team'
 import './Login.css'
 import { useState , useEffect } from 'react'
-import Home from '../Home/Home'
+
 
 const Login = () => {
 

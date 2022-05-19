@@ -17,7 +17,8 @@
     flex-direction: column;
     box-sizing: border-box;
     /* box-shadow: 6px 4px 38px 4px rgba(0, 0, 0, 0.02);  */
-    /* width: 100%; */
+    width: 100%;
+    /* background-color: yellow; */
     /* margin-left: 250px; */
     margin-left: 20%;
     padding-inline: 4%;
@@ -26,7 +27,7 @@
    
 
 .team-members-table-main table{
-    /* width: 100%; */
+    width: 100%;
     border-collapse: collapse;
 }
 .team-members-table-main tr{
@@ -69,6 +70,12 @@
 
 }
 
+
+@media (max-width: 1024px) {
+    .team-members-table{
+        margin-left: 26%;
+    }
+}
 @media (max-width: 768px) {
     .team-members-table{
         margin-left: 20%;
@@ -80,4 +87,9 @@
         width: auto;
     }
    
+}
+@media (max-width: 360px) {
+    .team-members-table{
+        margin-left: 35%;
+    }
 }

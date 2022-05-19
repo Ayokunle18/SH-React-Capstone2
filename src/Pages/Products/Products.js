@@ -24,7 +24,7 @@ const Products = () => {
       {
         productInfo? productInfo.map((product, idx) =>(
               <div key={idx} className= "product-card">
-                <div id='image'><img src={product.image}/> </div>
+                <div id='image'><img src={product.image} alt="product"/> </div>
                 <h2>{product.name}</h2>
                 <p>Price : {product.price}</p>
                 <p>Taxes : {product.taxes}</p>

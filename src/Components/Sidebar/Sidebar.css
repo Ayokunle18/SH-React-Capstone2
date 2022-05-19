@@ -12,7 +12,8 @@
 .sideBar ul{
     background-color: rgb(13, 37, 85);
     width: 220px;
-    margin-right: 250px;
+    /* text-align: s; */
+    /* margin-right: 250px; */
     /* height: 100vh; */
     height: 100%;
     position: fixed;
@@ -20,21 +21,19 @@
     float: left;
     
 }
-#sidebar{
-    display: none;
-}
+
 #sidebarClose{
-    /* display: none; */
+    display: none;
     width: 80px;
 }
-#sidebarClose ul h1{
-    font-size: 14px !important;
+/* #sidebarClose ul h1{
+    font-size: 10px !important;
     color: whitesmoke;
-}
+} */
 .sideBar ul li{
     list-style: none;
     margin-block: 25%;
-    margin-inline: 3%;
+    margin-inline: 2%;
     font-size: 17px;
     color: rgb(182, 188, 194);
     font-weight: 500;
@@ -45,11 +44,7 @@
 }
 
 
-.logOut{
-   /* margin-top: 45%; */
-   /* margin-top: 300px; */
 
-}
 .sideBar ul h1{
     font-size: 24px;
     color: whitesmoke;
@@ -58,4 +53,38 @@
     font-size: 20px;
     margin-right: 12px;
     color: rgb(182, 188, 194);
+}
+
+
+@media (max-width: 768px) {
+    #sidebar{
+        display: none;
+    }
+    #sidebarClose{
+        display: block;
+        width: 80px;
+        text-align: center; 
+    }
+    .sideBar ul h1{
+        font-size: 17px;
+        margin-inline:0% ;
+    }
+    
+    .sideBar ul li{
+      
+        margin-block: 60%;
+        margin-inline: 0%;
+    }
+    .icons{
+        font-size: 25px;
+        margin-right: 40px;
+        color: rgb(182, 188, 194);
+    }
+    #topp{
+        margin-top: 70px;
+    }
+}
+@media (max-width: 500px) {
+   
+   
 }
