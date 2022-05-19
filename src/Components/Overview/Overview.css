@@ -1,0 +1,36 @@
+/* .O{
+    display: flex;
+    margin-bottom: 3%;
+} */
+.overview{
+    position: relative;
+    background-color: white;
+    width: 19%;
+    padding-block: 1.5%;
+    padding-inline: 4%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin-inline: 2.5%;
+    margin-block: 1.5%;
+    /* width: 300px; */
+
+}
+.overview p{
+    opacity: 0.56;
+    padding-bottom: 3%;
+    font-size: 17px;
+}
+.overview b{
+    font-size: 24px;
+    font-weight: 400;
+}
+.overview small{
+    position: absolute;
+    right: 25%;
+    font-size: 17px;
+    color: green;
+}
+
+
+
+
+
