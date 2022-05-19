@@ -1,28 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 *{
     margin: 0;
 }
-ul{
+.sideBar{
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+      position: fixed;
+    left: 0;
+    float: left;
+}
+.sideBar ul{
     background-color: rgb(13, 37, 85);
     width: 220px;
+    /* text-align: s; */
+    /* margin-right: 250px; */
     /* height: 100vh; */
+    height: 100%;
+    position: fixed;
+    left: 0;
     float: left;
     
 }
-ul li{
+
+#sidebarClose{
+    display: none;
+    width: 80px;
+}
+/* #sidebarClose ul h1{
+    font-size: 10px !important;
+    color: whitesmoke;
+} */
+.sideBar ul li{
     list-style: none;
     margin-block: 25%;
-    margin-inline: 3%;
+    margin-inline: 2%;
     font-size: 17px;
     color: rgb(182, 188, 194);
     font-weight: 500;
 }
-
-.logOut{
-   margin-top: 45%;
-   /* margin-top: 300px; */
+.sideBar ul li:hover{
+    color: rgb(0, 0, 0);
 
 }
-h1{
+
+
+
+.sideBar ul h1{
     font-size: 24px;
     color: whitesmoke;
 }
@@ -30,4 +53,38 @@ h1{
     font-size: 20px;
     margin-right: 12px;
     color: rgb(182, 188, 194);
+}
+
+
+@media (max-width: 768px) {
+    #sidebar{
+        display: none;
+    }
+    #sidebarClose{
+        display: block;
+        width: 80px;
+        text-align: center; 
+    }
+    .sideBar ul h1{
+        font-size: 17px;
+        margin-inline:0% ;
+    }
+    
+    .sideBar ul li{
+      
+        margin-block: 60%;
+        margin-inline: 0%;
+    }
+    .icons{
+        font-size: 25px;
+        margin-right: 40px;
+        color: rgb(182, 188, 194);
+    }
+    #topp{
+        margin-top: 70px;
+    }
+}
+@media (max-width: 500px) {
+   
+   
 }
