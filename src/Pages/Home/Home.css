@@ -11,4 +11,8 @@
  }
  .top{
      display: flex;
+     flex-wrap: wrap;
+ }
+ .order{
+     margin-top: 5%;
  }

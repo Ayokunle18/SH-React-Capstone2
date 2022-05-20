@@ -1,5 +1,6 @@
 import React from 'react'
 import Chart from '../../Components/Overview/Chart'
+import Orders from '../../Components/Overview/Orders'
 import Overview from '../../Components/Overview/Overview'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import './Home.css'
@@ -15,8 +16,8 @@ const Home = () => {
       <Overview/>
        
      </div>
-     <div className>
-       <Chart/>
+     <div className='order'>
+       <Orders/>
      </div>
      
     </div>
