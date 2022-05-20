@@ -50,6 +50,7 @@
     margin-bottom: 1%;
 }
 .topp{
+    font-weight: 600;
     font-size: 17px;
     padding-bottom: 1%;
     padding-top: 1%;
@@ -57,6 +58,9 @@
 .orderbox{
     /* background-color: teal; */
     margin-inline: 3%;
+    background-color: white;
+    border-radius: 10px;
+
     
 }
 .bodyy{
